@@ -13,11 +13,8 @@ API_ID = 34291405
 BOT_TOKEN = "8361936176:AAGGK1quzDqwHER4iPmdUlAdsvaV-ixOUK4"
 USER_NAME = "lauraonlinecheckerbot"
 
-client = TelegramClient('data_thief', API_ID, API_HASH)
-
-client.connect()
-client.start()
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+client = bot
 
 data = {}
 
